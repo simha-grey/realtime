@@ -7,7 +7,8 @@ I did it (Do you remember the "12 Monkeys" movie).
 In fact not so much work.
 The hardest part for me was configuring HWIOAuthBundle in several .yaml files—a lack of instructions.
 
-My app is containerized. It uses three Docker containers: Nginx, Php-fpm, and PostgreSQL. You will find Dockerfiles in the "docker" directory and Makefile with different helpful commands.
+My app is containerized. It uses three Docker containers for each of process: Nginx, Php-fpm, and PostgreSQL.
+You will find Dockerfiles in the "docker/*" directories and Makefile with a helpful command.
 
 How to deploy this sandbox.
 
