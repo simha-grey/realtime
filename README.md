@@ -9,7 +9,12 @@ The hardest part for me was configuring HWIOAuthBundle in several .yaml files—
 
 My app is containerized. It uses three Docker containers: Nginx, Php-fpm, and PostgreSQL. You will find Dockerfiles in the "docker" directory and Makefile with different helpful commands.
 
-How to deploy this sandbox?
-Actually, I'm not sure it will work when cloned. I'll solve this problem someday. 
-In any case: 'composer update' and 'make dc_build dc_up'.
-I think you have to create the database. 
+How to deploy this sandbox.
+1. cd your/project/directory 
+2. composer update
+3. create and configure .env.local, .env.test.local files. You need to replace "!ChangeMe!" strings.
+4. execute "make dc_build dc_up"
+5. execute "make app_bash" to get into the container.
+6. execute php bin/console doctrine:migrations:migrate
+
+   In a browser open HTTP://127.0.0.1:888/dashboard. You will be redirected to login page. Click "Login with Google".
