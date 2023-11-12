@@ -10,6 +10,7 @@ The hardest part for me was configuring HWIOAuthBundle in several .yaml files—
 My app is containerized. It uses three Docker containers: Nginx, Php-fpm, and PostgreSQL. You will find Dockerfiles in the "docker" directory and Makefile with different helpful commands.
 
 How to deploy this sandbox.
+0. git clone...
 1. cd your/project/directory 
 2. composer update
 3. create and configure .env.local, .env.test.local files. You need to replace "!ChangeMe!" strings.
