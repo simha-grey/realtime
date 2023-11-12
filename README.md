@@ -20,4 +20,5 @@ How to deploy this sandbox.
 6. execute "make app_bash" to get into the container.
 7. execute php bin/console doctrine:migrations:migrate
 
-   In a browser open HTTP://127.0.0.1:888/dashboard. You will be redirected to the login page. Click "Login with Google".
+In a browser open "http://127.0.0.1:888/dashboard". You will be redirected to the login page. Click "Login with Google".
+Password-based authentication also works. To try it, first of all, register your user on page "http://127.0.0.1:888/register".
