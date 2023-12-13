@@ -24,7 +24,7 @@ dc_up:
 down:
 	${DOCKER_COMPOSE} down
 
-restart: stop start
+restart: dc_stop dc_start
 
 dc_ps:
 	${DOCKER_COMPOSE} ps

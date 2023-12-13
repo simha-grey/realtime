@@ -1,4 +1,4 @@
-FROM php:8.1.0-fpm-alpine
+FROM php:8.3.0-fpm-alpine3.19
 
 #install packages
 RUN apk add --no-cache curl git build-base zlib-dev oniguruma-dev autoconf bash
