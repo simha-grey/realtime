@@ -8,5 +8,13 @@
       <jdbc-url>jdbc:postgresql://localhost:54322/symfony</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="realtime@localhost" uuid="a0c58950-0726-40b2-b1f0-46e4299cdf0d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>realtime chat application</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:54322/realtime</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
